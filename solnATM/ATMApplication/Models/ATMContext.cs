@@ -7,7 +7,7 @@ namespace ATMApplication.Models
         public ATMContext(DbContextOptions options) : base(options)
         {
         }
-
+        
         DbSet<Card> Cards { get; set; } 
         DbSet<Account> Accounts { get; set; }
         DbSet<Transaction> Transactions { get; set; }
@@ -17,7 +17,6 @@ namespace ATMApplication.Models
         {
             modelBuilder.Entity<Customer>().HasData(
                 new Customer { Id = 1, Name = "Ram", Gender = "Male", Age = 22, Phone = "9999999999", Address = "Chennai" });
-
             modelBuilder.Entity<Card>().HasData(
                 new Card { Id = 1, CardNumber = "ABC123", CustomerID = 1, CreatedDate = DateTime.Now, ExpiryDate = DateTime.Now.AddDays(10), Pin = "9999" }
             );

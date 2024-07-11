@@ -2,6 +2,7 @@
 
 namespace ATMApplication.Exceptions
 {
+    [Serializable]
     public class EntityNotFoundException : Exception
     {
         public EntityNotFoundException()

@@ -60,7 +60,7 @@ namespace ATMTest.Services
             // Action
             var exception = Assert.ThrowsAsync<InvalidCredentialsException>(() => authService.AuthenticateCard(authenticationDTO));
         }
-
+        
         [Test]
         public async Task AuthenticationWrongCardFailTest()
         {
