@@ -1,34 +1,71 @@
-﻿using ATMApplication.Exceptions;
+using ATMApplication.Exceptions;
 using ATMApplication.Models;
 using ATMApplication.Models.DTOs;
 using ATMApplication.Repositories;
 using ATMApplication.Services;
+using Microsoft.AspNetCore.Authentication;
 using System.Security.Cryptography.X509Certificates;
 
 namespace ATMApplication.Services
 {
     public class TransactionService : ITransactionService
     {
-        AuthenticationService authenticationService;
-        IRepository<int, Customer> _customerRepository;
-        IRepository<int, Account> _accountRepository; 
-        IRepository<int, Transaction> _transactionRepository; 
-        public TransactionService(IRepository<int , Card> cardRepo, IRepository<int , Customer>customerRepository , IRepository<int , Account>accountRepository, IRepository< int , Transaction>transactionRepository) {
-            authenticationService = new AuthenticationService(cardRepo);
-            _customerRepository = customerRepository;
-            _accountRepository = accountRepository;
-            _transactionRepository = transactionRepository;
+        private readonly IAuthenticationService _authenticationService;
+        private readonly IRepository<int, Account> _accountRepository;
+        private readonly IRepository<Guid, Transaction> _transactionRepository;
+
+        public TransactionService(IRepository<Guid, Transaction> transactionRepo, IRepository<int, Account> accountRepo, IAuthenticationService authenticationService)
+        {
+            _transactionRepository = transactionRepo;
+            _accountRepository = accountRepo;
+            _authenticationService = authenticationService;
         }
+
+        public async Task<List<ReturnTransactionDTO>> GetTransactionHistory(AuthenticationDTO authenticationDTO)
+        {
+            int CustomerId = await _authenticationService.AuthenticateCard(authenticationDTO);
+            var AllTransactions = await _transactionRepository.GetAll();
+            var transactions = new List<Transaction>();
+            foreach(var transaction in AllTransactions)
+            {
+                var account = await _accountRepository.GetById(transaction.AccountId);
+                if(account.CustomerID == CustomerId)
+                    transactions.Add(transaction);
+            }
+            if(transactions.Count == 0)
+            {
+                throw new NoEntitiesFoundException("No transactions found!");
+            }
+            var result = new List<ReturnTransactionDTO>();
+            foreach (var transaction in transactions)
+            {
+                result.Add(await MapTransactionToReturnTransactionDTO(transaction));
+            }
+            return result;
+        }
+
+        private async Task<ReturnTransactionDTO> MapTransactionToReturnTransactionDTO(Transaction transaction)
+        {
+            ReturnTransactionDTO returnTransactionDTO = new ReturnTransactionDTO();
+            returnTransactionDTO.Id = transaction.Id;
+            var account = await _accountRepository.GetById(transaction.AccountId);
+            returnTransactionDTO.AccountNo = account.AccountNo;
+            returnTransactionDTO.Amount = transaction.Amount;
+            returnTransactionDTO.Time = transaction.Time;
+            returnTransactionDTO.Type = transaction.Type.ToString();
+            return returnTransactionDTO;
+        }
+
         public async Task<DepositReturnDTO> Deposit(DepositDTO depositDto)
         {
             try
             {
-                int customerId = await authenticationService.AuthenticateCard(depositDto.authDetails); 
+                int customerId = await _authenticationService.AuthenticateCard(depositDto.authDetails);
                 var accounts = await _accountRepository.GetAll();
-                var account = accounts.SingleOrDefault(x => x.CustomerID == customerId); 
+                var account = accounts.SingleOrDefault(x => x.CustomerID == customerId);
                 if (depositDto.amount > 20000)
                 {
-                    throw new DepositAmoutExceedExption(); 
+                    throw new DepositAmoutExceedExption();
                 }
                 if (account != null)
                 {
@@ -36,10 +73,10 @@ namespace ATMApplication.Services
                     {
                         Amount = depositDto.amount,
                         Time = DateTime.Now,
-                        Type=Transaction.TransactionType.Deposit,
-                        AccountId=account.AccountId
+                        Type = TransactionTypeEnum.TransactionType.Deposit,
+                        AccountId = account.AccountId
                     };
-                    await _transactionRepository.Add(t); 
+                    await _transactionRepository.Add(t);
                     account.Balance += depositDto.amount;
                     await _accountRepository.Update(account);
                     return new DepositReturnDTO
@@ -47,16 +84,16 @@ namespace ATMApplication.Services
                         Success = true,
                         AccountNo = account.AccountNo,
                         CutomerId = customerId
-                    }; 
+                    };
                 }
                 else
                 {
-                    throw new EntityNotFoundException(); 
+                    throw new EntityNotFoundException();
                 }
             }
             catch
             {
-                throw; 
+                throw;
             }
         }
     }

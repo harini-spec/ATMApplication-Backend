@@ -24,6 +24,16 @@ namespace ATMApplication
             builder.Services.AddScoped<IRepository<int, Transaction>, TransactionRepository>(); 
             builder.Services.AddScoped<ITransactionService, TransactionService>();
 
+
+            builder.Services.AddScoped<IRepository<int, Customer>, CustomerRepository>();
+            builder.Services.AddScoped<IRepository<Guid, Transaction>, TransactionRepository>();
+            builder.Services.AddScoped<IRepository<int, Card>, CardRepository>();
+            builder.Services.AddScoped<IRepository<int, Account>, AccountRepository>();
+
+            builder.Services.AddScoped<ITransactionService, TransactionService>();
+            builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
