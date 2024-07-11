@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B6716888-D8BA-4FFC-9C6C-9C597B753E02}|ATMTest\\ATMTest.csproj|c:\\users\\vc\\desktop\\presidio\\atm-app\\solnatm\\atmtest\\repositories\\transactionrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6716888-D8BA-4FFC-9C6C-9C597B753E02}|ATMTest\\ATMTest.csproj|solutionrelative:atmtest\\repositories\\transactionrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B6716888-D8BA-4FFC-9C6C-9C597B753E02}|ATMTest\\ATMTest.csproj|c:\\users\\vc\\desktop\\presidio\\atm-app\\solnatm\\atmtest\\services\\authenticationservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6716888-D8BA-4FFC-9C6C-9C597B753E02}|ATMTest\\ATMTest.csproj|solutionrelative:atmtest\\services\\authenticationservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\desktop\\presidio\\atm-app\\solnatm\\atmapplication\\repositories\\abstractrepositoryclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\repositories\\abstractrepositoryclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\desktop\\presidio\\atm-app\\solnatm\\atmapplication\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\desktop\\presidio\\atm-app\\solnatm\\atmapplication\\services\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\services\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\desktop\\presidio\\atm-app\\solnatm\\atmapplication\\models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,34 +29,60 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AbstractRepositoryClass.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Repositories\\AbstractRepositoryClass.cs",
-              "RelativeDocumentMoniker": "ATMApplication\\Repositories\\AbstractRepositoryClass.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Repositories\\AbstractRepositoryClass.cs",
-              "RelativeToolTip": "ATMApplication\\Repositories\\AbstractRepositoryClass.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAAAFYAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T07:24:48.67Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TransactionRepositoryTest.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMTest\\Repositories\\TransactionRepositoryTest.cs",
-              "RelativeDocumentMoniker": "ATMTest\\Repositories\\TransactionRepositoryTest.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMTest\\Repositories\\TransactionRepositoryTest.cs",
-              "RelativeToolTip": "ATMTest\\Repositories\\TransactionRepositoryTest.cs",
-              "ViewState": "AQIAAHQAAAAAAAAAAAA6wIgAAAAsAAAA",
+              "Title": "AuthenticationServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMTest\\Services\\AuthenticationServiceTest.cs",
+              "RelativeDocumentMoniker": "ATMTest\\Services\\AuthenticationServiceTest.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMTest\\Services\\AuthenticationServiceTest.cs",
+              "RelativeToolTip": "ATMTest\\Services\\AuthenticationServiceTest.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAEsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T07:10:27.621Z",
+              "WhenOpened": "2024-07-11T09:12:53.851Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Card.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Models\\Card.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Models\\Card.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Models\\Card.cs",
+              "RelativeToolTip": "ATMApplication\\Models\\Card.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T09:04:22.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IAuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Services\\IAuthenticationService.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Services\\IAuthenticationService.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Services\\IAuthenticationService.cs",
+              "RelativeToolTip": "ATMApplication\\Services\\IAuthenticationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T09:03:31.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Services\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Services\\AuthenticationService.cs",
+              "RelativeToolTip": "ATMApplication\\Services\\AuthenticationService.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAcAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T08:51:57.524Z",
+              "EditorCaption": ""
             }
           ]
         }
