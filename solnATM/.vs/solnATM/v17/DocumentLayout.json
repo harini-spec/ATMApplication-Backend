@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Migrations\\20240711052456_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ATMApplication\\Migrations\\20240711052456_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B6716888-D8BA-4FFC-9C6C-9C597B753E02}|ATMTest\\ATMTest.csproj|c:\\users\\vc\\desktop\\presidio\\atm-app\\solnatm\\atmtest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6716888-D8BA-4FFC-9C6C-9C597B753E02}|ATMTest\\ATMTest.csproj|solutionrelative:atmtest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\desktop\\presidio\\atm-app\\solnatm\\atmapplication\\migrations\\20240711052456_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\migrations\\20240711052456_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\desktop\\presidio\\atm-app\\solnatm\\atmapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,6 +51,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMTest\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "ATMTest\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMTest\\UnitTest1.cs",
+              "RelativeToolTip": "ATMTest\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T06:07:23.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "20240711052456_init.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Migrations\\20240711052456_init.cs",
               "RelativeDocumentMoniker": "ATMApplication\\Migrations\\20240711052456_init.cs",
@@ -59,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\appsettings.json",
               "RelativeDocumentMoniker": "ATMApplication\\appsettings.json",
@@ -67,12 +84,11 @@
               "RelativeToolTip": "ATMApplication\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-11T05:22:19.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-11T05:22:19.885Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ATMContext.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Models\\ATMContext.cs",
               "RelativeDocumentMoniker": "ATMApplication\\Models\\ATMContext.cs",
@@ -80,12 +96,11 @@
               "RelativeToolTip": "ATMApplication\\Models\\ATMContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T05:09:27.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-11T05:09:27.775Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Card.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Models\\Card.cs",
               "RelativeDocumentMoniker": "ATMApplication\\Models\\Card.cs",
@@ -93,12 +108,11 @@
               "RelativeToolTip": "ATMApplication\\Models\\Card.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T04:54:02.654Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-11T04:54:02.654Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Account.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Models\\Account.cs",
               "RelativeDocumentMoniker": "ATMApplication\\Models\\Account.cs",
@@ -106,12 +120,11 @@
               "RelativeToolTip": "ATMApplication\\Models\\Account.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T04:52:52.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-11T04:52:52.055Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Transaction.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Models\\Transaction.cs",
               "RelativeDocumentMoniker": "ATMApplication\\Models\\Transaction.cs",
@@ -119,12 +132,11 @@
               "RelativeToolTip": "ATMApplication\\Models\\Transaction.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T04:49:18.937Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-11T04:49:18.937Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "ATMApplication\\Models\\Customer.cs",
@@ -132,12 +144,11 @@
               "RelativeToolTip": "ATMApplication\\Models\\Customer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T04:47:17.919Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-11T04:47:17.919Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Program.cs",
               "RelativeDocumentMoniker": "ATMApplication\\Program.cs",
@@ -145,8 +156,7 @@
               "RelativeToolTip": "ATMApplication\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAACSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T04:42:32.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-11T04:42:32.235Z"
             }
           ]
         }
