@@ -1,18 +1,18 @@
 ﻿using ATMApplication.Exceptions;
-using ATMApplication.Models;
 using ATMApplication.Models.DTOs;
+using ATMApplication.Models;
 using ATMApplication.Repositories;
 
 namespace ATMApplication.Services
 {
-    public class AuthenticationService : IAuthenticationService
+    public class AuthenticationService
     {
         private readonly IRepository<int, Card> _cardRepo;
         public AuthenticationService(IRepository<int, Card> cardRepo)
         {
             _cardRepo = cardRepo;
         }
-
+        
         public async Task<int> AuthenticateCard(AuthenticationDTO authenticationDTO)
         {
             var cards = await _cardRepo.GetAll();
@@ -25,6 +25,5 @@ namespace ATMApplication.Services
                 return card.CustomerID;
             throw new InvalidCredentialsException("Invalid Credentials");
         }
-
     }
 }

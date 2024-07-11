@@ -11,7 +11,6 @@ namespace ATMApplication.Controllers
     [ApiController]
     public class TransactionController : ControllerBase
     {
-
         private readonly ITransactionService _transactionService;
         private readonly IAuthenticationService _authenticationService;
 
@@ -33,8 +32,7 @@ namespace ATMApplication.Controllers
             {
                 try
                 {
-                    int CustomerId = await _authenticationService.AuthenticateCard(authenticationDTO);
-                    var result = await _transactionService.GetTransactionHistory(CustomerId);
+                    var result = await _transactionService.GetTransactionHistory(authenticationDTO);
                     return Ok(result);
                 }
                 catch (NoEntitiesFoundException nef)
@@ -51,6 +49,38 @@ namespace ATMApplication.Controllers
                 }
             }
             return BadRequest("All details are not provided. Please check the object");
+
+        [HttpPost]
+        [Route("Deposit")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public  async Task<ActionResult<DepositReturnDTO>> DepositAmount(DepositDTO dto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return StatusCode(StatusCodes.Status400BadRequest);
+            }
+            try
+            {
+               DepositReturnDTO returndto =  await _transactionService.Deposit(dto);
+                return returndto;
+            }
+            catch (EntityNotFoundException)
+            {
+                return StatusCode(StatusCodes.Status400BadRequest); 
+            }
+            catch (InvalidCredentialsException)
+            {
+                return StatusCode(StatusCodes.Status401Unauthorized);
+            }
+            catch (DepositAmoutExceedExption)
+            {
+                return StatusCode(StatusCodes.Status409Conflict); 
+            }
+            catch
+            {
+                return StatusCode(statusCode: StatusCodes.Status500InternalServerError); 
+            }
         }
     }
 }

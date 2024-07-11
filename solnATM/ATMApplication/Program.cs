@@ -18,6 +18,11 @@ namespace ATMApplication
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddDbContext<ATMContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnection")));
+            builder.Services.AddScoped<IRepository<int, Account>, AccountRepository>(); 
+            builder.Services.AddScoped<IRepository<int, Customer>, CustomerRepository>(); 
+            builder.Services.AddScoped<IRepository<int, Card>, CardRepository>(); 
+            builder.Services.AddScoped<IRepository<int, Transaction>, TransactionRepository>(); 
+            builder.Services.AddScoped<ITransactionService, TransactionService>();
 
 
             builder.Services.AddScoped<IRepository<int, Customer>, CustomerRepository>();
