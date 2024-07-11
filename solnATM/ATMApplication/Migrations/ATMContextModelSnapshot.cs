@@ -24,8 +24,15 @@ namespace ATMApplication.Migrations
 
             modelBuilder.Entity("ATMApplication.Models.Account", b =>
                 {
+                    b.Property<int>("AccountId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AccountId"), 1L, 1);
+
                     b.Property<string>("AccountNo")
-                        .HasColumnType("nvarchar(450)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("Balance")
                         .HasColumnType("float");
@@ -36,7 +43,7 @@ namespace ATMApplication.Migrations
                     b.Property<int>("Id")
                         .HasColumnType("int");
 
-                    b.HasKey("AccountNo");
+                    b.HasKey("AccountId");
 
                     b.HasIndex("Id");
 
@@ -74,9 +81,9 @@ namespace ATMApplication.Migrations
                         {
                             Id = 1,
                             CardNumber = "ABC123",
-                            CreatedDate = new DateTime(2024, 7, 11, 10, 54, 56, 784, DateTimeKind.Local).AddTicks(5515),
+                            CreatedDate = new DateTime(2024, 7, 11, 12, 6, 44, 673, DateTimeKind.Local).AddTicks(6131),
                             CustomerID = 1,
-                            ExpiryDate = new DateTime(2024, 7, 21, 10, 54, 56, 784, DateTimeKind.Local).AddTicks(5527),
+                            ExpiryDate = new DateTime(2024, 7, 21, 12, 6, 44, 673, DateTimeKind.Local).AddTicks(6144),
                             Pin = "9999"
                         });
                 });
@@ -130,9 +137,8 @@ namespace ATMApplication.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("AccountNo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("AccountId")
+                        .HasColumnType("int");
 
                     b.Property<double>("Amount")
                         .HasColumnType("float");
@@ -145,7 +151,7 @@ namespace ATMApplication.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AccountNo");
+                    b.HasIndex("AccountId");
 
                     b.ToTable("Transactions");
                 });
@@ -176,7 +182,7 @@ namespace ATMApplication.Migrations
                 {
                     b.HasOne("ATMApplication.Models.Account", "Account")
                         .WithMany()
-                        .HasForeignKey("AccountNo")
+                        .HasForeignKey("AccountId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

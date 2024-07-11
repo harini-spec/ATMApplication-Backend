@@ -17,8 +17,8 @@ namespace ATMApplication.Models
         public DateTime Time { get; set; }
         public TransactionType Type { get; set; }
 
-        public string AccountNo { get; set; }
-        [ForeignKey("AccountNo")]
+        public int AccountId { get; set; }
+        [ForeignKey("AccountId")]
         public Account Account { get; set; }
     }
 }
