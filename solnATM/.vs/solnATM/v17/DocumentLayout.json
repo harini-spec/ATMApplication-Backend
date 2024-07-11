@@ -1,12 +1,58 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B6716888-D8BA-4FFC-9C6C-9C597B753E02}|ATMTest\\ATMTest.csproj|c:\\users\\vc\\desktop\\presidio\\atm-app\\solnatm\\atmtest\\repositories\\transactionrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6716888-D8BA-4FFC-9C6C-9C597B753E02}|ATMTest\\ATMTest.csproj|solutionrelative:atmtest\\repositories\\transactionrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\desktop\\presidio\\atm-app\\solnatm\\atmapplication\\repositories\\abstractrepositoryclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\repositories\\abstractrepositoryclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AbstractRepositoryClass.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Repositories\\AbstractRepositoryClass.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Repositories\\AbstractRepositoryClass.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Repositories\\AbstractRepositoryClass.cs",
+              "RelativeToolTip": "ATMApplication\\Repositories\\AbstractRepositoryClass.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAAAFYAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T07:24:48.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransactionRepositoryTest.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMTest\\Repositories\\TransactionRepositoryTest.cs",
+              "RelativeDocumentMoniker": "ATMTest\\Repositories\\TransactionRepositoryTest.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMTest\\Repositories\\TransactionRepositoryTest.cs",
+              "RelativeToolTip": "ATMTest\\Repositories\\TransactionRepositoryTest.cs",
+              "ViewState": "AQIAAHQAAAAAAAAAAAA6wIgAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T07:10:27.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
