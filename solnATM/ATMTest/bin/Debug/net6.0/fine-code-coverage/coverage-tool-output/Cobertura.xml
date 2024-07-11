@@ -1,13 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.747126436781609" branch-rate="0.5" lines-covered="130" lines-valid="174" branches-covered="3" branches-valid="6" complexity="59" version="0" timestamp="1720703970">
+<coverage line-rate="0.781659388646288" branch-rate="0.7" lines-covered="179" lines-valid="229" branches-covered="7" branches-valid="10" complexity="75" version="0" timestamp="1720709780">
   <sources>
     <source>C:\Users\VC\</source>
   </sources>
   <packages>
-    <package name="ATMApplication" line-rate="0.619469026548673" branch-rate="0.5" complexity="48">
+    <package name="ATMApplication" line-rate="0.654929577464789" branch-rate="0.7" complexity="59">
       <classes>
         <class name="ATMApplication.Exceptions.EntityNotFoundException" filename="C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\Exceptions\EntityNotFoundException.cs" line-rate="0.25" branch-rate="1" complexity="4">
+          <methods>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="0" branch="false" />
+                <line number="8" hits="0" branch="false" />
+                <line number="9" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="2" branch="false" />
+                <line number="12" hits="2" branch="false" />
+                <line number="13" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="0" branch="false" />
+            <line number="8" hits="0" branch="false" />
+            <line number="9" hits="0" branch="false" />
+            <line number="11" hits="2" branch="false" />
+            <line number="12" hits="2" branch="false" />
+            <line number="13" hits="2" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="ATMApplication.Exceptions.InvalidCredentialsException" filename="C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\Exceptions\InvalidCredentialsException.cs" line-rate="0.25" branch-rate="1" complexity="4">
           <methods>
             <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -93,22 +139,22 @@
           <methods>
             <method name="get_Cards" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="8" branch="false" />
+                <line number="11" hits="11" branch="false" />
               </lines>
             </method>
             <method name="get_Accounts" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="8" branch="false" />
+                <line number="12" hits="11" branch="false" />
               </lines>
             </method>
             <method name="get_Transactions" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="8" branch="false" />
+                <line number="13" hits="11" branch="false" />
               </lines>
             </method>
             <method name="get_Customers" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="8" branch="false" />
+                <line number="14" hits="11" branch="false" />
               </lines>
             </method>
             <method name="OnModelCreating" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
@@ -124,20 +170,20 @@
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="8" branch="false" />
-                <line number="8" hits="8" branch="false" />
-                <line number="9" hits="8" branch="false" />
+                <line number="7" hits="11" branch="false" />
+                <line number="8" hits="11" branch="false" />
+                <line number="9" hits="11" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="7" hits="8" branch="false" />
-            <line number="8" hits="8" branch="false" />
-            <line number="9" hits="8" branch="false" />
-            <line number="11" hits="8" branch="false" />
-            <line number="12" hits="8" branch="false" />
-            <line number="13" hits="8" branch="false" />
-            <line number="14" hits="8" branch="false" />
+            <line number="7" hits="11" branch="false" />
+            <line number="8" hits="11" branch="false" />
+            <line number="9" hits="11" branch="false" />
+            <line number="11" hits="11" branch="false" />
+            <line number="12" hits="11" branch="false" />
+            <line number="13" hits="11" branch="false" />
+            <line number="14" hits="11" branch="false" />
             <line number="17" hits="1" branch="false" />
             <line number="18" hits="1" branch="false" />
             <line number="19" hits="1" branch="false" />
@@ -151,17 +197,17 @@
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="1" branch="false" />
+                <line number="9" hits="4" branch="false" />
               </lines>
             </method>
             <method name="get_CardNumber" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="1" branch="false" />
+                <line number="10" hits="7" branch="false" />
               </lines>
             </method>
             <method name="get_CustomerID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="1" branch="false" />
+                <line number="11" hits="5" branch="false" />
               </lines>
             </method>
             <method name="get_customer" signature="()" line-rate="0" branch-rate="1" complexity="1">
@@ -171,28 +217,28 @@
             </method>
             <method name="get_Pin" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="1" branch="false" />
+                <line number="14" hits="6" branch="false" />
               </lines>
             </method>
             <method name="get_CreatedDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="15" hits="1" branch="false" />
+                <line number="15" hits="4" branch="false" />
               </lines>
             </method>
             <method name="get_ExpiryDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="1" branch="false" />
+                <line number="16" hits="4" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="1" branch="false" />
-            <line number="10" hits="1" branch="false" />
-            <line number="11" hits="1" branch="false" />
+            <line number="9" hits="4" branch="false" />
+            <line number="10" hits="7" branch="false" />
+            <line number="11" hits="5" branch="false" />
             <line number="13" hits="0" branch="false" />
-            <line number="14" hits="1" branch="false" />
-            <line number="15" hits="1" branch="false" />
-            <line number="16" hits="1" branch="false" />
+            <line number="14" hits="6" branch="false" />
+            <line number="15" hits="4" branch="false" />
+            <line number="16" hits="4" branch="false" />
           </lines>
         </class>
         <class name="ATMApplication.Models.Customer" filename="C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\Models\Customer.cs" line-rate="1" branch-rate="1" complexity="6">
@@ -235,6 +281,24 @@
             <line number="11" hits="1" branch="false" />
             <line number="12" hits="1" branch="false" />
             <line number="13" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ATMApplication.Models.DTOs.AuthenticationDTO" filename="C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\Models\DTOs\AuthenticationDTO.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_CardNumber" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Pin" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="5" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="6" branch="false" />
+            <line number="11" hits="5" branch="false" />
           </lines>
         </class>
         <class name="ATMApplication.Models.Transaction" filename="C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\Models\Transaction.cs" line-rate="0.833333333333333" branch-rate="1" complexity="6">
@@ -325,20 +389,20 @@
           <methods>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="8" branch="false" />
-                <line number="18" hits="8" branch="false" />
-                <line number="19" hits="8" branch="false" />
-                <line number="20" hits="8" branch="false" />
-                <line number="21" hits="8" branch="false" />
+                <line number="17" hits="11" branch="false" />
+                <line number="18" hits="11" branch="false" />
+                <line number="19" hits="11" branch="false" />
+                <line number="20" hits="11" branch="false" />
+                <line number="21" hits="11" branch="false" />
               </lines>
             </method>
             <method name="Add" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="73" hits="5" branch="false" />
-                <line number="74" hits="5" branch="false" />
-                <line number="75" hits="5" branch="false" />
-                <line number="76" hits="5" branch="false" />
-                <line number="77" hits="5" branch="false" />
+                <line number="73" hits="8" branch="false" />
+                <line number="74" hits="8" branch="false" />
+                <line number="75" hits="8" branch="false" />
+                <line number="76" hits="8" branch="false" />
+                <line number="77" hits="8" branch="false" />
               </lines>
             </method>
             <method name="Delete" signature="()" line-rate="0.777777777777778" branch-rate="0.5" complexity="2">
@@ -356,9 +420,9 @@
             </method>
             <method name="GetAll" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="46" hits="1" branch="false" />
-                <line number="47" hits="1" branch="false" />
-                <line number="48" hits="1" branch="false" />
+                <line number="46" hits="4" branch="false" />
+                <line number="47" hits="4" branch="false" />
+                <line number="48" hits="4" branch="false" />
               </lines>
             </method>
             <method name="GetById" signature="()" line-rate="1" branch-rate="1" complexity="2">
@@ -384,11 +448,11 @@
             </method>
           </methods>
           <lines>
-            <line number="17" hits="8" branch="false" />
-            <line number="18" hits="8" branch="false" />
-            <line number="19" hits="8" branch="false" />
-            <line number="20" hits="8" branch="false" />
-            <line number="21" hits="8" branch="false" />
+            <line number="17" hits="11" branch="false" />
+            <line number="18" hits="11" branch="false" />
+            <line number="19" hits="11" branch="false" />
+            <line number="20" hits="11" branch="false" />
+            <line number="21" hits="11" branch="false" />
             <line number="29" hits="2" branch="false" />
             <line number="30" hits="2" branch="false" />
             <line number="31" hits="1" branch="true" condition-coverage="50% (1/2)" />
@@ -398,9 +462,9 @@
             <line number="36" hits="1" branch="false" />
             <line number="37" hits="1" branch="false" />
             <line number="38" hits="1" branch="false" />
-            <line number="46" hits="1" branch="false" />
-            <line number="47" hits="1" branch="false" />
-            <line number="48" hits="1" branch="false" />
+            <line number="46" hits="4" branch="false" />
+            <line number="47" hits="4" branch="false" />
+            <line number="48" hits="4" branch="false" />
             <line number="58" hits="5" branch="false" />
             <line number="59" hits="5" branch="false" />
             <line number="60" hits="5" branch="true" condition-coverage="100% (2/2)" />
@@ -408,11 +472,11 @@
             <line number="62" hits="2" branch="false" />
             <line number="64" hits="3" branch="false" />
             <line number="65" hits="3" branch="false" />
-            <line number="73" hits="5" branch="false" />
-            <line number="74" hits="5" branch="false" />
-            <line number="75" hits="5" branch="false" />
-            <line number="76" hits="5" branch="false" />
-            <line number="77" hits="5" branch="false" />
+            <line number="73" hits="8" branch="false" />
+            <line number="74" hits="8" branch="false" />
+            <line number="75" hits="8" branch="false" />
+            <line number="76" hits="8" branch="false" />
+            <line number="77" hits="8" branch="false" />
             <line number="85" hits="2" branch="false" />
             <line number="86" hits="2" branch="false" />
             <line number="87" hits="2" branch="false" />
@@ -437,20 +501,20 @@
             <line number="9" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="ATMApplication.Repositories.CardRepository" filename="C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\Repositories\CardRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="ATMApplication.Repositories.CardRepository" filename="C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\Repositories\CardRepository.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
-            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="0" branch="false" />
-                <line number="8" hits="0" branch="false" />
-                <line number="9" hits="0" branch="false" />
+                <line number="7" hits="3" branch="false" />
+                <line number="8" hits="3" branch="false" />
+                <line number="9" hits="3" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="7" hits="0" branch="false" />
-            <line number="8" hits="0" branch="false" />
-            <line number="9" hits="0" branch="false" />
+            <line number="7" hits="3" branch="false" />
+            <line number="8" hits="3" branch="false" />
+            <line number="9" hits="3" branch="false" />
           </lines>
         </class>
         <class name="ATMApplication.Repositories.CustomerRepository" filename="C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\Repositories\CustomerRepository.cs" line-rate="0" branch-rate="1" complexity="1">
@@ -485,9 +549,53 @@
             <line number="9" hits="8" branch="false" />
           </lines>
         </class>
+        <class name="ATMApplication.Services.AuthenticationService" filename="C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\Services\AuthenticationService.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="3" branch="false" />
+                <line number="12" hits="3" branch="false" />
+                <line number="13" hits="3" branch="false" />
+                <line number="14" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="AuthenticateCard" signature="()" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="17" hits="3" branch="false" />
+                <line number="18" hits="3" branch="false" />
+                <line number="19" hits="6" branch="false" />
+                <line number="20" hits="3" branch="true" condition-coverage="100% (2/2)" />
+                <line number="21" hits="1" branch="false" />
+                <line number="22" hits="1" branch="false" />
+                <line number="24" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="25" hits="1" branch="false" />
+                <line number="26" hits="1" branch="false" />
+                <line number="28" hits="1" branch="false" />
+                <line number="29" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="3" branch="false" />
+            <line number="12" hits="3" branch="false" />
+            <line number="13" hits="3" branch="false" />
+            <line number="14" hits="3" branch="false" />
+            <line number="17" hits="3" branch="false" />
+            <line number="18" hits="3" branch="false" />
+            <line number="19" hits="6" branch="false" />
+            <line number="20" hits="3" branch="true" condition-coverage="100% (2/2)" />
+            <line number="21" hits="1" branch="false" />
+            <line number="22" hits="1" branch="false" />
+            <line number="24" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="25" hits="1" branch="false" />
+            <line number="26" hits="1" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="29" hits="1" branch="false" />
+          </lines>
+        </class>
       </classes>
     </package>
-    <package name="ATMTest" line-rate="0.983606557377049" branch-rate="1" complexity="11">
+    <package name="ATMTest" line-rate="0.988505747126437" branch-rate="1" complexity="16">
       <classes>
         <class name="ATMTest.Repositories.TransactionRepositoryTest" filename="C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMTest\Repositories\TransactionRepositoryTest.cs" line-rate="1" branch-rate="1" complexity="10">
           <methods>
@@ -653,6 +761,84 @@
             <line number="141" hits="1" branch="false" />
             <line number="144" hits="1" branch="false" />
             <line number="146" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ATMTest.Services.AuthenticationServiceTest" filename="C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMTest\Services\AuthenticationServiceTest.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="Setup" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="3" branch="false" />
+                <line number="26" hits="3" branch="false" />
+                <line number="27" hits="3" branch="false" />
+                <line number="28" hits="3" branch="false" />
+                <line number="29" hits="3" branch="false" />
+                <line number="30" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="TearDown" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="34" hits="3" branch="false" />
+                <line number="35" hits="3" branch="false" />
+                <line number="36" hits="3" branch="false" />
+                <line number="37" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="AuthenticationSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="41" hits="1" branch="false" />
+                <line number="43" hits="1" branch="false" />
+                <line number="44" hits="1" branch="false" />
+                <line number="47" hits="1" branch="false" />
+                <line number="50" hits="1" branch="false" />
+                <line number="51" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="AuthenticationWrongCardFailTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="66" hits="1" branch="false" />
+                <line number="68" hits="1" branch="false" />
+                <line number="69" hits="1" branch="false" />
+                <line number="72" hits="2" branch="false" />
+                <line number="73" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="AuthenticationWrongPinFailTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="55" hits="1" branch="false" />
+                <line number="57" hits="1" branch="false" />
+                <line number="58" hits="1" branch="false" />
+                <line number="61" hits="2" branch="false" />
+                <line number="62" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="25" hits="3" branch="false" />
+            <line number="26" hits="3" branch="false" />
+            <line number="27" hits="3" branch="false" />
+            <line number="28" hits="3" branch="false" />
+            <line number="29" hits="3" branch="false" />
+            <line number="30" hits="3" branch="false" />
+            <line number="34" hits="3" branch="false" />
+            <line number="35" hits="3" branch="false" />
+            <line number="36" hits="3" branch="false" />
+            <line number="37" hits="3" branch="false" />
+            <line number="41" hits="1" branch="false" />
+            <line number="43" hits="1" branch="false" />
+            <line number="44" hits="1" branch="false" />
+            <line number="47" hits="1" branch="false" />
+            <line number="50" hits="1" branch="false" />
+            <line number="51" hits="1" branch="false" />
+            <line number="55" hits="1" branch="false" />
+            <line number="57" hits="1" branch="false" />
+            <line number="58" hits="1" branch="false" />
+            <line number="61" hits="2" branch="false" />
+            <line number="62" hits="1" branch="false" />
+            <line number="66" hits="1" branch="false" />
+            <line number="68" hits="1" branch="false" />
+            <line number="69" hits="1" branch="false" />
+            <line number="72" hits="2" branch="false" />
+            <line number="73" hits="1" branch="false" />
           </lines>
         </class>
         <class name="AutoGeneratedProgram" filename="C:\Users\VC\.nuget\packages\microsoft.net.test.sdk\17.5.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
