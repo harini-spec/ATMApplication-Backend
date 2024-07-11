@@ -1,9 +1,6 @@
-﻿using ATMApplication.Models.DTOs;
-
-namespace ATMApplication.Services
+﻿namespace ATMApplication.Services
 {
     public interface IAuthenticationService
     {
-        public Task<int> AuthenticateCard(AuthenticationDTO authenticationDTO);
     }
 }

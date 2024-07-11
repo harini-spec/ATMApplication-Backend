@@ -1,6 +1,7 @@
 ﻿namespace ATMApplication.Services
 {
-    public class TransactionService
+    public class TransactionService:ITransactionService
     {
+
     }
 }

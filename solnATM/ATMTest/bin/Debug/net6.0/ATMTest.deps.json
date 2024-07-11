@@ -9,7 +9,7 @@
       "ATMTest/1.0.0": {
         "dependencies": {
           "ATMApplication": "1.0.0",
-          "Microsoft.EntityFrameworkCore.InMemory": "6.0.32",
+          "Microsoft.EntityFrameworkCore.InMemory": "6.0.31",
           "Microsoft.NET.Test.Sdk": "17.5.0",
           "NUnit": "3.13.3",
           "NUnit.Analyzers": "3.6.1",
@@ -114,14 +114,14 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/6.0.32": {},
-      "Microsoft.EntityFrameworkCore.InMemory/6.0.32": {
+      "Microsoft.EntityFrameworkCore.InMemory/6.0.31": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.32"
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
-            "assemblyVersion": "6.0.32.0",
-            "fileVersion": "6.0.3224.26906"
+            "assemblyVersion": "6.0.31.0",
+            "fileVersion": "6.0.3124.26901"
           }
         }
       },
@@ -853,12 +853,12 @@
       "path": "microsoft.entityframeworkcore.analyzers/6.0.32",
       "hashPath": "microsoft.entityframeworkcore.analyzers.6.0.32.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.InMemory/6.0.32": {
+    "Microsoft.EntityFrameworkCore.InMemory/6.0.31": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-F81tHD5mvTQO+vus49yPyIjWOcvADNSSwh9kq1dfZVNuxkkOPiF9fQWTMBvuqAS0C8l8XPBmWqdcyO4IgzVifA==",
-      "path": "microsoft.entityframeworkcore.inmemory/6.0.32",
-      "hashPath": "microsoft.entityframeworkcore.inmemory.6.0.32.nupkg.sha512"
+      "sha512": "sha512-OGWMbsqAxen7IrKjzFEdxAMEHCxfH6Jmtug3RRbI3qSMKFmsAZqm2JLIunF1nJnYn0AjaKIXBmYW9hnyOB3z5g==",
+      "path": "microsoft.entityframeworkcore.inmemory/6.0.31",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.6.0.31.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/6.0.32": {
       "type": "package",
