@@ -49,6 +49,7 @@ namespace ATMApplication.Controllers
                 }
             }
             return BadRequest("All details are not provided. Please check the object");
+        }
 
         [HttpPost]
         [Route("Deposit")]

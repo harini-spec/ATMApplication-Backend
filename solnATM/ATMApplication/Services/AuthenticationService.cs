@@ -5,7 +5,7 @@ using ATMApplication.Repositories;
 
 namespace ATMApplication.Services
 {
-    public class AuthenticationService
+    public class AuthenticationService : IAuthenticationService
     {
         private readonly IRepository<int, Card> _cardRepo;
         public AuthenticationService(IRepository<int, Card> cardRepo)

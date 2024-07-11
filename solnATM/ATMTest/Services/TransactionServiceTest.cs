@@ -22,7 +22,7 @@ namespace ATMTest.Services
             DbContextOptionsBuilder optionsBuilder = new DbContextOptionsBuilder().UseInMemoryDatabase("AuthenticationDB");
             context = new ATMContext(optionsBuilder.Options);
             transactionRepo = new TransactionRepository(context);
-            transactionService = new TransactionService(transactionRepo, null);
+            transactionService = new TransactionService(transactionRepo, null, null);
         }
 
         [TearDown]
