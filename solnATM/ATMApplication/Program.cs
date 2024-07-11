@@ -1,3 +1,6 @@
+using ATMApplication.Models;
+using Microsoft.EntityFrameworkCore;
+
 namespace ATMApplication
 {
     public class Program
@@ -12,6 +15,7 @@ namespace ATMApplication
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddDbContext<ATMContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnection")));
 
             var app = builder.Build();
 
