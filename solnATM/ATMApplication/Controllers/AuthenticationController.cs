@@ -1,6 +1,6 @@
 ﻿using ATMApplication.Exceptions;
-using ATMApplication.Models;
 using ATMApplication.Models.DTOs;
+using ATMApplication.Models;
 using ATMApplication.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -9,41 +9,32 @@ namespace ATMApplication.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TransactionController : ControllerBase
+    public class AuthenticationController : ControllerBase
     {
-
-        private readonly ITransactionService _transactionService;
         private readonly IAuthenticationService _authenticationService;
 
-        public TransactionController(ITransactionService transactionService, IAuthenticationService authenticationService)
+        public AuthenticationController(IAuthenticationService authenticationService)
         {
-            _transactionService = transactionService;
             _authenticationService = authenticationService;
         }
 
-        [HttpPost("GetAllTransactions")]
+        [HttpPost("AuthenticateCard")]
         [ProducesResponseType(typeof(List<ReturnTransactionDTO>), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status404NotFound)]
-        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
 
-        public async Task<ActionResult<List<ReturnTransactionDTO>>> GetAllTransactions(AuthenticationDTO authenticationDTO)
+        public async Task<ActionResult<int>> AuthenticateCard(AuthenticationDTO authenticationDTO)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
                     int CustomerId = await _authenticationService.AuthenticateCard(authenticationDTO);
-                    var result = await _transactionService.GetTransactionHistory(CustomerId);
-                    return Ok(result);
+                    return Ok(CustomerId);
                 }
-                catch (NoEntitiesFoundException nef)
+                catch (InvalidCredentialsException ice)
                 {
-                    return NotFound(new ErrorModel(404, nef.Message));
-                }
-                catch (EntityNotFoundException enf)
-                {
-                    return NotFound(new ErrorModel(404, enf.Message));
+                    return Unauthorized(new ErrorModel(401, ice.Message));
                 }
                 catch (Exception ex)
                 {

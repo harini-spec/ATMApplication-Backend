@@ -67,3 +67,10 @@ C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\obj\Debug\net6.0\ref
 C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\obj\Debug\net6.0\ATMApplication.pdb
 C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\obj\Debug\net6.0\ATMApplication.genruntimeconfig.cache
 C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\obj\Debug\net6.0\ref\ATMApplication.dll
+C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\bin\Debug\net6.0\System.Web.Mvc.dll
+C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\bin\Debug\net6.0\System.Web.WebPages.dll
+C:\Users\VC\Desktop\Presidio\ATM-app\solnATM\ATMApplication\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
