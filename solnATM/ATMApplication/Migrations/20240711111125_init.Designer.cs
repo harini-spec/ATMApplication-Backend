@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ATMApplication.Migrations
 {
     [DbContext(typeof(ATMContext))]
-    [Migration("20240711063644_init")]
+    [Migration("20240711111125_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -83,9 +83,9 @@ namespace ATMApplication.Migrations
                         {
                             Id = 1,
                             CardNumber = "ABC123",
-                            CreatedDate = new DateTime(2024, 7, 11, 12, 6, 44, 673, DateTimeKind.Local).AddTicks(6131),
+                            CreatedDate = new DateTime(2024, 7, 11, 16, 41, 25, 726, DateTimeKind.Local).AddTicks(470),
                             CustomerID = 1,
-                            ExpiryDate = new DateTime(2024, 7, 21, 12, 6, 44, 673, DateTimeKind.Local).AddTicks(6144),
+                            ExpiryDate = new DateTime(2024, 7, 21, 16, 41, 25, 726, DateTimeKind.Local).AddTicks(488),
                             Pin = "9999"
                         });
                 });

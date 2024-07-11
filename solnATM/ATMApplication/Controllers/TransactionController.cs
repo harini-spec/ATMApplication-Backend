@@ -1,17 +1,16 @@
 ﻿using ATMApplication.Exceptions;
-using ATMApplication.Models;
 using ATMApplication.Models.DTOs;
 using ATMApplication.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Threading.Tasks;
 
 namespace ATMApplication.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class TransactionController : ControllerBase
     {
-
         private readonly ITransactionService _transactionService;
         private readonly IAuthenticationService _authenticationService;
 
@@ -21,36 +20,52 @@ namespace ATMApplication.Controllers
             _authenticationService = authenticationService;
         }
 
-        [HttpPost("GetAllTransactions")]
-        [ProducesResponseType(typeof(List<ReturnTransactionDTO>), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status404NotFound)]
-        [ProducesResponseType(typeof(ErrorModel), StatusCodes.Status500InternalServerError)]
-        [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
-
-        public async Task<ActionResult<List<ReturnTransactionDTO>>> GetAllTransactions(AuthenticationDTO authenticationDTO)
+        [HttpPost("withdraw")]
+        public async Task<IActionResult> Withdraw([FromBody] WithdrawalDTO withdrawalDTO)
         {
-            if (ModelState.IsValid)
+            try
             {
-                try
+                // Validate the model state
+                if (!ModelState.IsValid)
                 {
-                    int CustomerId = await _authenticationService.AuthenticateCard(authenticationDTO);
-                    var result = await _transactionService.GetTransactionHistory(CustomerId);
-                    return Ok(result);
+                    return BadRequest(ModelState);
                 }
-                catch (NoEntitiesFoundException nef)
+
+                // Extract authentication details
+                var cardNumber = withdrawalDTO.AuthDetails.CardNumber;
+                var pin = withdrawalDTO.AuthDetails.Pin;
+
+                // Authenticate the card
+                var customerId = await _authenticationService.AuthenticateCard(new AuthenticationDTO
                 {
-                    return NotFound(new ErrorModel(404, nef.Message));
-                }
-                catch (EntityNotFoundException enf)
+                    CardNumber = cardNumber,
+                    Pin = pin
+                });
+
+                // Perform the withdrawal
+                bool result = await _transactionService.Withdraw(new WithdrawalDTO
                 {
-                    return NotFound(new ErrorModel(404, enf.Message));
-                }
-                catch (Exception ex)
-                {
-                    return BadRequest(new ErrorModel(500, ex.Message));
-                }
+                    Amount = withdrawalDTO.Amount // Only pass the amount to the transaction service
+                }, customerId);
+
+                return Ok(new { success = result });
             }
-            return BadRequest("All details are not provided. Please check the object");
+            catch (InvalidCredentialsException ex)
+            {
+                return Unauthorized(new { message = ex.Message });
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+            catch (EntityNotFoundException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An unexpected error occurred.", details = ex.Message });
+            }
         }
     }
 }

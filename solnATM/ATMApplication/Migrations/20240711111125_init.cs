@@ -99,7 +99,7 @@ namespace ATMApplication.Migrations
             migrationBuilder.InsertData(
                 table: "Cards",
                 columns: new[] { "Id", "CardNumber", "CreatedDate", "CustomerID", "ExpiryDate", "Pin" },
-                values: new object[] { 1, "ABC123", new DateTime(2024, 7, 11, 12, 6, 44, 673, DateTimeKind.Local).AddTicks(6131), 1, new DateTime(2024, 7, 21, 12, 6, 44, 673, DateTimeKind.Local).AddTicks(6144), "9999" });
+                values: new object[] { 1, "ABC123", new DateTime(2024, 7, 11, 16, 41, 25, 726, DateTimeKind.Local).AddTicks(470), 1, new DateTime(2024, 7, 21, 16, 41, 25, 726, DateTimeKind.Local).AddTicks(488), "9999" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Accounts_Id",

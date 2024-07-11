@@ -4,6 +4,6 @@ namespace ATMApplication.Services
 {
     public interface ITransactionService
     {
-        public Task<List<ReturnTransactionDTO>> GetTransactionHistory(int CustomerId);
+        Task<bool> Withdraw(WithdrawalDTO withdrawalDTO, int customerId);
     }
 }

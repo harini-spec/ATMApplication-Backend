@@ -9,7 +9,7 @@ namespace ATMApplication.Models
         public int AccountId { get; set; } 
         public string AccountNo { get; set; }
         public double Balance { get; set; }
-        public int CustomerID { get; set; }
+        public int Id { get; set; }
         [ForeignKey("Id")]
         public Customer customer { get; set; }
     }

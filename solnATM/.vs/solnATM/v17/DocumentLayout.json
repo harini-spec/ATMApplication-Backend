@@ -1,12 +1,342 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmapplication\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmapplication\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmapplication\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmapplication\\models\\dtos\\withdrawaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\models\\dtos\\withdrawaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmapplication\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmapplication\\models\\atmcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\models\\atmcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmapplication\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmapplication\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmapplication\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmapplication\\models\\dtos\\authenticationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\models\\dtos\\authenticationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmapplication\\services\\itransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\services\\itransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmapplication\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmapplication\\repositories\\abstractrepositoryclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\repositories\\abstractrepositoryclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6716888-D8BA-4FFC-9C6C-9C597B753E02}|ATMTest\\ATMTest.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmtest\\services\\authenticationservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6716888-D8BA-4FFC-9C6C-9C597B753E02}|ATMTest\\ATMTest.csproj|solutionrelative:atmtest\\services\\authenticationservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmapplication\\services\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\services\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmapplication\\models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmapplication\\migrations\\20240711111755_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\migrations\\20240711111755_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\downloads\\atm-app\\atm-app\\solnatm\\atmapplication\\migrations\\20240711111125_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\migrations\\20240711111125_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Models\\Account.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Models\\Account.cs",
+              "RelativeToolTip": "ATMApplication\\Models\\Account.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T10:41:53.13Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TransactionController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Controllers\\TransactionController.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Controllers\\TransactionController.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Controllers\\TransactionController.cs",
+              "RelativeToolTip": "ATMApplication\\Controllers\\TransactionController.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAswDsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T10:56:02.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Models\\Transaction.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Models\\Transaction.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Models\\Transaction.cs",
+              "RelativeToolTip": "ATMApplication\\Models\\Transaction.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAqwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T10:42:09.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransactionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Repositories\\TransactionRepository.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Repositories\\TransactionRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Repositories\\TransactionRepository.cs",
+              "RelativeToolTip": "ATMApplication\\Repositories\\TransactionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T10:36:24.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WithdrawalDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Models\\DTOs\\WithdrawalDTO.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Models\\DTOs\\WithdrawalDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Models\\DTOs\\WithdrawalDTO.cs",
+              "RelativeToolTip": "ATMApplication\\Models\\DTOs\\WithdrawalDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T10:46:51.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TransactionService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Services\\TransactionService.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Services\\TransactionService.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Services\\TransactionService.cs",
+              "RelativeToolTip": "ATMApplication\\Services\\TransactionService.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAlwBwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T10:54:55.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20240711111755_data.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Migrations\\20240711111755_data.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Migrations\\20240711111755_data.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Migrations\\20240711111755_data.cs",
+              "RelativeToolTip": "ATMApplication\\Migrations\\20240711111755_data.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T11:17:55.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ATMContext.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Models\\ATMContext.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Models\\ATMContext.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Models\\ATMContext.cs",
+              "RelativeToolTip": "ATMApplication\\Models\\ATMContext.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAwBUAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T11:11:45.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Program.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Program.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Program.cs",
+              "RelativeToolTip": "ATMApplication\\Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwBkAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T11:20:01.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Models\\Customer.cs",
+              "RelativeToolTip": "ATMApplication\\Models\\Customer.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T10:42:07.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20240711111125_init.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Migrations\\20240711111125_init.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Migrations\\20240711111125_init.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Migrations\\20240711111125_init.cs",
+              "RelativeToolTip": "ATMApplication\\Migrations\\20240711111125_init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T11:11:26.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Services\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Services\\AuthenticationService.cs",
+              "RelativeToolTip": "ATMApplication\\Services\\AuthenticationService.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAYwB8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T08:51:57.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthenticationDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Models\\DTOs\\AuthenticationDTO.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Models\\DTOs\\AuthenticationDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Models\\DTOs\\AuthenticationDTO.cs",
+              "RelativeToolTip": "ATMApplication\\Models\\DTOs\\AuthenticationDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T10:37:06.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\appsettings.json",
+              "RelativeDocumentMoniker": "ATMApplication\\appsettings.json",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\appsettings.json",
+              "RelativeToolTip": "ATMApplication\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-11T11:04:18.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ITransactionService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Services\\ITransactionService.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Services\\ITransactionService.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Services\\ITransactionService.cs",
+              "RelativeToolTip": "ATMApplication\\Services\\ITransactionService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T10:50:52.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Repositories\\IRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "ATMApplication\\Repositories\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T10:43:40.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AbstractRepositoryClass.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Repositories\\AbstractRepositoryClass.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Repositories\\AbstractRepositoryClass.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Repositories\\AbstractRepositoryClass.cs",
+              "RelativeToolTip": "ATMApplication\\Repositories\\AbstractRepositoryClass.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAYwFwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T10:43:04.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthenticationServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMTest\\Services\\AuthenticationServiceTest.cs",
+              "RelativeDocumentMoniker": "ATMTest\\Services\\AuthenticationServiceTest.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMTest\\Services\\AuthenticationServiceTest.cs",
+              "RelativeToolTip": "ATMTest\\Services\\AuthenticationServiceTest.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAEsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T09:12:53.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IAuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Services\\IAuthenticationService.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Services\\IAuthenticationService.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Services\\IAuthenticationService.cs",
+              "RelativeToolTip": "ATMApplication\\Services\\IAuthenticationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T09:03:31.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Card.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Models\\Card.cs",
+              "RelativeDocumentMoniker": "ATMApplication\\Models\\Card.cs",
+              "ToolTip": "C:\\Users\\VC\\Downloads\\ATM-app\\ATM-app\\solnATM\\ATMApplication\\Models\\Card.cs",
+              "RelativeToolTip": "ATMApplication\\Models\\Card.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T09:04:22.722Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
