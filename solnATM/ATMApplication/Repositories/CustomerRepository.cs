@@ -7,5 +7,6 @@ namespace ATMApplication.Repositories
         public CustomerRepository(ATMContext context) : base(context)
         {
         }
+        
     }
 }
