@@ -3,7 +3,7 @@
 namespace ATMApplication.Exceptions
 {
     [Serializable]
-    internal class DepositAmoutExceedExption : Exception
+    public class DepositAmoutExceedExption : Exception
     {
         public DepositAmoutExceedExption()
         {
