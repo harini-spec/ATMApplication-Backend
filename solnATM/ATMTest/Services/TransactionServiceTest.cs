@@ -51,14 +51,7 @@ namespace ATMTest.Services
         }
 
         [Test]
-        public async Task GetAllTransactionsSuccessTest()
-        {
-
-            Assert.Pass(); 
-        }
-
-        [Test]
-        public async Task TestDeopsit()
+        public async Task TestDeposit()
         {
             DepositDTO depositDTO = new DepositDTO();
             AuthenticationDTO authenticationDTO = new AuthenticationDTO();
@@ -72,7 +65,7 @@ namespace ATMTest.Services
         [Test]
         public async Task TestDepositThrowsCredientalsNotValidException()
         {
-             DepositDTO depositDTO = new DepositDTO();
+            DepositDTO depositDTO = new DepositDTO();
             AuthenticationDTO authenticationDTO = new AuthenticationDTO();
             authenticationDTO.CardNumber = "ABC123";
             authenticationDTO.Pin = "0000";
@@ -89,6 +82,105 @@ namespace ATMTest.Services
             depositDTO.authDetails = authenticationDTO; 
             depositDTO.amount = 50000;
             Assert.ThrowsAsync<DepositAmoutExceedExption>(async () => await transactionService.Deposit(depositDTO)); 
-        } 
+        }
+
+        [Test]
+        public async Task TestDepositThrowsEntityNotFoundException()
+        {
+            await accountRepo.Delete(1);
+            DepositDTO depositDTO = new DepositDTO();
+            AuthenticationDTO authenticationDTO = new AuthenticationDTO();
+            authenticationDTO.CardNumber = "ABC123";
+            authenticationDTO.Pin = "9999";
+            depositDTO.authDetails = authenticationDTO;
+            depositDTO.amount = 5000;
+            Assert.ThrowsAsync<EntityNotFoundException>(async () => await transactionService.Deposit(depositDTO));
+        }
+
+        [Test]
+        public async Task WithdrawSuccessTest()
+        {
+            // Arrange
+            AuthenticationDTO authenticationDTO = new AuthenticationDTO
+            {
+                CardNumber = "ABC123",
+                Pin = "9999"
+            };
+            WithdrawalDTO withdrawalDTO = new WithdrawalDTO
+            {
+                Amount = 100,
+                AuthDetails = authenticationDTO
+            };
+
+            // Action
+            var result = await transactionService.Withdraw(withdrawalDTO, 1);
+            
+            // Assert
+            Assert.That(result, Is.EqualTo(true));
+        }
+
+        [Test]
+        public async Task WithdrawNoAccountFailTest()
+        {
+            // Arrange
+            await accountRepo.Delete(1);
+            AuthenticationDTO authenticationDTO = new AuthenticationDTO
+            {
+                CardNumber = "ABC123",
+                Pin = "9999"
+            };
+            WithdrawalDTO withdrawalDTO = new WithdrawalDTO
+            {
+                Amount = 100,
+                AuthDetails = authenticationDTO
+            };
+
+            // Action
+            Assert.ThrowsAsync<EntityNotFoundException>(async () => await transactionService.Withdraw(withdrawalDTO, 1));
+        }
+
+        [Test]
+        public async Task WithdrawAmountLimitExceededFailTest()
+        {
+            // Arrange
+            AuthenticationDTO authenticationDTO = new AuthenticationDTO
+            {
+                CardNumber = "ABC123",
+                Pin = "9999"
+            };
+            WithdrawalDTO withdrawalDTO = new WithdrawalDTO
+            {
+                Amount = 15000,
+                AuthDetails = authenticationDTO
+            };
+
+            // Action
+            var exception = Assert.ThrowsAsync<InvalidOperationException>(async () => await transactionService.Withdraw(withdrawalDTO, 1));
+
+            // Assert
+            Assert.That(exception.Message, Is.EqualTo("Cannot withdraw more than 10000 in one transaction."));
+        }
+
+        [Test]
+        public async Task WithdrawAmountExceedsBalanceFailTest()
+        {
+            // Arrange
+            AuthenticationDTO authenticationDTO = new AuthenticationDTO
+            {
+                CardNumber = "ABC123",
+                Pin = "9999"
+            };
+            WithdrawalDTO withdrawalDTO = new WithdrawalDTO
+            {
+                Amount = 5000,
+                AuthDetails = authenticationDTO
+            };
+
+            // Action
+            var exception = Assert.ThrowsAsync<InvalidOperationException>(async () => await transactionService.Withdraw(withdrawalDTO, 1));
+
+            // Assert
+            Assert.That(exception.Message, Is.EqualTo("Insufficient balance."));
+        }
     }
 }

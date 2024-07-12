@@ -28,10 +28,6 @@ namespace ATMApplication.Repositories
         public async virtual Task<T> Delete(K id)
         {
             var ob = await GetById(id);
-            if (ob == null)
-            {
-                return null;
-            }
             _dbSet.Remove(ob);
             await _context.SaveChangesAsync();
             return ob;
