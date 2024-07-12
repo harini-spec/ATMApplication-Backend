@@ -27,6 +27,15 @@ namespace ATMApplication
             builder.Services.AddScoped<ITransactionService, TransactionService>();
             builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                                      .AllowAnyMethod()
+                                      .AllowAnyHeader());
+            });
+
+
 
             var app = builder.Build();
 
@@ -41,6 +50,8 @@ namespace ATMApplication
 
 
             app.MapControllers();
+            app.UseCors("CorsPolicy");
+
 
             app.Run();
         }
