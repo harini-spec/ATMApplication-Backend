@@ -71,5 +71,26 @@ namespace ATMTest.Services
             // Action
             var exception = Assert.ThrowsAsync<InvalidCredentialsException>(() => authService.AuthenticateCard(authenticationDTO));
         }
+
+        [Test]
+        public async Task AuthenticationCardExpiredFailTest()
+        {
+            // Arrange
+            await cardRepo.Add(new Card { Id = 1, CardNumber = "AAA111", CreatedDate = DateTime.Now, ExpiryDate = DateTime.Now.AddDays(-1), CustomerID = 1, Pin = "1111" });
+            AuthenticationDTO authenticationDTO = new AuthenticationDTO { CardNumber = "AAA111", Pin = "2222" };
+
+            // Action
+            var exception = Assert.ThrowsAsync<CardExpiredException>(() => authService.AuthenticateCard(authenticationDTO));
+        }
+
+        [Test]
+        public async Task AuthenticationNoCardInDBFailTest()
+        {
+            // Arrange
+            AuthenticationDTO authenticationDTO = new AuthenticationDTO { CardNumber = "AAA111", Pin = "2222" };
+
+            // Action
+            var exception = Assert.ThrowsAsync<InvalidCredentialsException>(() => authService.AuthenticateCard(authenticationDTO));
+        }
     }
 }
