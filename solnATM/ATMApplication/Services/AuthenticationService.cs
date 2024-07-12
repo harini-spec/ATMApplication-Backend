@@ -16,12 +16,16 @@ namespace ATMApplication.Services
         public async Task<int> AuthenticateCard(AuthenticationDTO authenticationDTO)
         {
             var cards = await _cardRepo.GetAll();
+
             if (cards.Count == 0)
                 throw new InvalidCredentialsException("Invalid Credentials");
             var card = cards.SingleOrDefault(c => c.CardNumber == authenticationDTO.CardNumber);
-            if(card == null)
+
+            if (card == null)
                 throw new InvalidCredentialsException("Invalid Credentials");
-            if(card.Pin == authenticationDTO.Pin)
+            if (card.ExpiryDate < DateTime.UtcNow)
+                    throw new CardExpiredException("Card Expired!");
+            if (card.Pin == authenticationDTO.Pin)
                 return card.CustomerID;
             throw new InvalidCredentialsException("Invalid Credentials");
         }
