@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ATMTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e89009ecec610d6c090ad38efe11e20dcd6b4819")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+405a5d552338e78cb0ccb9a20aae05c6309eb658")]
 [assembly: System.Reflection.AssemblyProductAttribute("ATMTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ATMTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
