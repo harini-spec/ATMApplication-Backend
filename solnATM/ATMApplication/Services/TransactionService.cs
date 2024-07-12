@@ -23,25 +23,32 @@ namespace ATMApplication.Services
 
         public async Task<List<ReturnTransactionDTO>> GetTransactionHistory(AuthenticationDTO authenticationDTO)
         {
-            int CustomerId = await _authenticationService.AuthenticateCard(authenticationDTO);
-            var AllTransactions = await _transactionRepository.GetAll();
-            var transactions = new List<Transaction>();
-            foreach(var transaction in AllTransactions)
+            try
             {
-                var account = await _accountRepository.GetById(transaction.AccountId);
-                if(account.CustomerID == CustomerId)
-                    transactions.Add(transaction);
+                int CustomerId = await _authenticationService.AuthenticateCard(authenticationDTO);
+                var AllTransactions = await _transactionRepository.GetAll();
+                var transactions = new List<Transaction>();
+                foreach (var transaction in AllTransactions)
+                {
+                    var account = await _accountRepository.GetById(transaction.AccountId);
+                    if (account.CustomerID == CustomerId)
+                        transactions.Add(transaction);
+                }
+                if (transactions.Count == 0)
+                {
+                    throw new NoEntitiesFoundException("No transactions found!");
+                }
+                var result = new List<ReturnTransactionDTO>();
+                foreach (var transaction in transactions)
+                {
+                    result.Add(await MapTransactionToReturnTransactionDTO(transaction));
+                }
+                return result;
             }
-            if(transactions.Count == 0)
+            catch
             {
-                throw new NoEntitiesFoundException("No transactions found!");
+                throw;
             }
-            var result = new List<ReturnTransactionDTO>();
-            foreach (var transaction in transactions)
-            {
-                result.Add(await MapTransactionToReturnTransactionDTO(transaction));
-            }
-            return result;
         }
 
         private async Task<ReturnTransactionDTO> MapTransactionToReturnTransactionDTO(Transaction transaction)
@@ -62,7 +69,7 @@ namespace ATMApplication.Services
             {
                 int customerId = await _authenticationService.AuthenticateCard(depositDto.authDetails);
                 var accounts = await _accountRepository.GetAll();
-                var account = accounts.SingleOrDefault(x => x.CustomerID == customerId);
+                var account = accounts.SingleOrDefault(a => a.CustomerID == customerId);
                 if (depositDto.amount > 20000)
                 {
                     throw new DepositAmoutExceedExption();
@@ -95,6 +102,43 @@ namespace ATMApplication.Services
             {
                 throw;
             }
+        }
+
+        public async Task<bool> Withdraw(WithdrawalDTO withdrawalDTO, int customerId)
+        {
+            var accounts = await _accountRepository.GetAll();
+            var account = accounts.SingleOrDefault(a => a.CustomerID == customerId);
+
+            if (account == null)
+            {
+                throw new EntityNotFoundException("Account not found!");
+            }
+
+            if (withdrawalDTO.Amount > 10000)
+            {
+                throw new InvalidOperationException("Cannot withdraw more than 10000 in one transaction.");
+            }
+
+            if (account.Balance < withdrawalDTO.Amount)
+            {
+                throw new InvalidOperationException("Insufficient balance.");
+            }
+
+            account.Balance -= withdrawalDTO.Amount;
+            await _accountRepository.Update(account);
+
+            var transaction = new Transaction
+            {
+                Id = Guid.NewGuid(),
+                Amount = withdrawalDTO.Amount,
+                Time = DateTime.Now,
+                Type = TransactionTypeEnum.TransactionType.Withdrawal,
+                AccountId = account.AccountId
+            };
+
+            await _transactionRepository.Add(transaction);
+
+            return true;
         }
     }
 }

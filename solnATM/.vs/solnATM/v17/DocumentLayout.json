@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\desktop\\presidio\\atm-app\\solnatm\\atmapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6716888-D8BA-4FFC-9C6C-9C597B753E02}|ATMTest\\ATMTest.csproj|c:\\users\\vc\\desktop\\presidio\\atm-app\\solnatm\\atmtest\\services\\transactionservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6716888-D8BA-4FFC-9C6C-9C597B753E02}|ATMTest\\ATMTest.csproj|solutionrelative:atmtest\\services\\transactionservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|c:\\users\\vc\\desktop\\presidio\\atm-app\\solnatm\\atmapplication\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34C3969C-CD41-4048-B60E-7485DD2DABBD}|ATMApplication\\ATMApplication.csproj|solutionrelative:atmapplication\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -22,49 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\appsettings.json",
-              "RelativeDocumentMoniker": "ATMApplication\\appsettings.json",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\appsettings.json",
-              "RelativeToolTip": "ATMApplication\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-11T15:10:34.47Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "TransactionService.cs",
               "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Services\\TransactionService.cs",
               "RelativeDocumentMoniker": "ATMApplication\\Services\\TransactionService.cs",
               "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMApplication\\Services\\TransactionService.cs",
               "RelativeToolTip": "ATMApplication\\Services\\TransactionService.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAABsAAABiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T15:03:45.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TransactionServiceTest.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMTest\\Services\\TransactionServiceTest.cs",
-              "RelativeDocumentMoniker": "ATMTest\\Services\\TransactionServiceTest.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Presidio\\ATM-app\\solnATM\\ATMTest\\Services\\TransactionServiceTest.cs",
-              "RelativeToolTip": "ATMTest\\Services\\TransactionServiceTest.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAiwBsAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T15:02:56.166Z",
+              "WhenOpened": "2024-07-12T04:24:33.369Z",
               "EditorCaption": ""
             }
           ]

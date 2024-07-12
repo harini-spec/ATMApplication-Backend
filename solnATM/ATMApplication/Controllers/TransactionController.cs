@@ -83,5 +83,53 @@ namespace ATMApplication.Controllers
                 return StatusCode(statusCode: StatusCodes.Status500InternalServerError); 
             }
         }
+
+        [HttpPost("withdraw")]
+        public async Task<IActionResult> Withdraw([FromBody] WithdrawalDTO withdrawalDTO)
+        {
+            try
+            {
+                // Validate the model state
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+
+                // Extract authentication details
+                var cardNumber = withdrawalDTO.AuthDetails.CardNumber;
+                var pin = withdrawalDTO.AuthDetails.Pin;
+
+                // Authenticate the card
+                var customerId = await _authenticationService.AuthenticateCard(new AuthenticationDTO
+                {
+                    CardNumber = cardNumber,
+                    Pin = pin
+                });
+
+                // Perform the withdrawal
+                bool result = await _transactionService.Withdraw(new WithdrawalDTO
+                {
+                    Amount = withdrawalDTO.Amount // Only pass the amount to the transaction service
+                }, customerId);
+
+                return Ok(new { success = result });
+            }
+            catch (InvalidCredentialsException ex)
+            {
+                return Unauthorized(new { message = ex.Message });
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+            catch (EntityNotFoundException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An unexpected error occurred.", details = ex.Message });
+            }
+        }
     }
 }
